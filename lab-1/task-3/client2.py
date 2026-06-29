@@ -22,8 +22,6 @@ def send(msg):
     print("Server:", client.recv(2048).decode(FORMAT))
 
 
-while True:
-    msg=input("Enter a message: ")
-    send(msg)
-    if msg==DISCONNECT:
-        break
+msg = input("Client 2 Enter Message: ")
+send(msg)
+send(DISCONNECT)
